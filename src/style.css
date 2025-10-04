@@ -1,0 +1,158 @@
+html, body, #cesiumContainer {
+  width: 100%; 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden;
+  font-family: sans-serif;
+  background-color: #000;
+}
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  background-color: rgba(40, 40, 40, 0.85);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+#controls label {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#controls select, #controls button {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+#controls button:hover {
+    background-color: #555;
+}
+#dashboard {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  background-color: rgba(40, 40, 40, 0.85);
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 300px;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: opacity 0.2s ease-in-out;
+}
+#dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+  cursor: move;
+}
+#dashboard h4 {
+  margin: 0;
+  font-size: 16px;
+}
+#toggle-dashboard {
+  background-color: #555;
+  color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 18px;
+}
+#toggle-dashboard:hover {
+  background-color: #777;
+}
+.dash-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.dash-item strong {
+  color: #cccccc;
+}
+.dash-item span {
+  font-weight: bold;
+  color: #4c9eff;
+}
+#dashboard-content.minimized {
+  display: none;
+}
+#dashboard-header.minimized {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+#mitigation-dashboard {
+  position: absolute;
+  bottom: 250px;
+  right: 20px;
+  z-index: 10;
+  background-color: rgba(40, 40, 40, 0.85);
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 300px;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: opacity 0.2s ease-in-out;
+}
+#mitigation-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+  cursor: move;
+}
+#mitigation-dashboard h4 {
+  margin: 0;
+  font-size: 16px;
+}
+#toggle-mitigation-dashboard {
+  background-color: #555;
+  color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 18px;
+}
+#toggle-mitigation-dashboard:hover {
+  background-color: #777;
+}
+#mitigation-dashboard-content.minimized {
+  display: none;
+}
+#mitigation-dashboard-header.minimized {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+#targeting-instruction {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 220, 0, 0.9);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 20;
+    font-weight: bold;
+    display: none;
+    border: 1px solid #fff;
+}
